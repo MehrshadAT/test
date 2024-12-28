@@ -1,0 +1,113 @@
+@font-face{
+    font-family: shabnam;
+    src: url(Fonts/Shabnam.ttf);
+}
+body {
+    font-family: shabnam;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: linear-gradient(0deg, #dfe9f3 0%,white 100%);
+}
+.header_container {
+    background: linear-gradient(0deg, #0D4337 0%,#237A57 78%);
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1190px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+.section_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.section_nav nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.section_nav nav ul li {
+    list-style: none;
+}
+
+.section_nav nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.section_nav nav ul li a:hover {
+    color: #a4b7a0;
+    transform: scale(1.1);
+}
+
+.logo_nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.logo_nav a:hover {
+    color: #bbdefb;
+    transform: scale(1.1);
+}
+
+.content {
+    padding-top: 100px;
+}
+@media (max-width: 768px) {
+    .header_container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .section_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_nav nav ul {
+        justify-content: center;
+    }
+
+    .section_nav nav ul li {
+        flex: 1;
+    }
+
+    .section_nav nav ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo_nav {
+        margin-bottom: 20px;
+    }
+
+    .logo_nav a {
+        display: none;
+    }
+}

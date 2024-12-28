@@ -1,0 +1,19 @@
+.call{
+    background-color: #1e1e1e;
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+}
+.call h4{
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0px;
+  margin-bottom: 24px;
+}
+.call p{
+font-size: 30px;
+color: #ffffff;
+margin: 0;
+}
+
